@@ -19,9 +19,9 @@
   },
   "license": "MIT",
   "author": {
-    "name": "Romain (Rubilmax) Milon",
-    "email": "rmilon@gmail.com",
-    "url": "https://github.com/rubilmax"
+    "name": "Morpho Labs",
+    "email": "security@morpho.xyz",
+    "url": "https://github.com/morpho-labs"
   },
   "engines": {
     "node": ">=18"
