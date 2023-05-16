@@ -7,7 +7,17 @@
 [![Commitizen Friendly][commitizen-img]][commitizen-url]
 [![Semantic Release][semantic-release-img]][semantic-release-url]
 
+> 📜 Useful script to build complex Gnosis Safe transactions involving Gnosis Multisend and/or Zodiac modifiers
 
+## Getting started
+
+```bash
+npx create-safe-tx
+```
+
+`create-safe-tx` will output the contents of your freshly-built Safe transaction into `tx.json`
+
+Hand it over either to Safe's backend, or to [`morpho-labs/safer`](https://github.com/morpho-labs/safer) in order to submit it onchain!
 
 [build-img]: https://github.com/morpho-labs/create-safe-tx/actions/workflows/release.yml/badge.svg
 [build-url]: https://github.com/morpho-labs/create-safe-tx/actions/workflows/release.yml
