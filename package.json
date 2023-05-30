@@ -40,12 +40,12 @@
   },
   "homepage": "https://github.com/morpho-labs/create-safe-tx#readme",
   "dependencies": {
-    "@inquirer/prompts": "^1.0.3",
-    "@types/node": "^20.1.1",
+    "@inquirer/prompts": "^1.2.3",
+    "@types/node": "^20.2.5",
     "command-line-args": "^5.2.1",
     "command-line-usage": "^7.0.1",
     "dotenv": "^16.0.3",
-    "ethers": "^6.3.0",
+    "ethers": "^6.4.0",
     "ethers-multisend": "^2.4.0",
     "ts-node": "^10.9.1"
   },
@@ -55,7 +55,7 @@
     "@types/command-line-args": "^5.2.0",
     "@types/command-line-usage": "^5.0.2",
     "@types/jest": "^29.5.1",
-    "@types/lodash": "^4.14.194",
+    "@types/lodash": "^4.14.195",
     "@types/lodash.debounce": "^4.0.7",
     "commitizen": "^4.3.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
@@ -66,7 +66,7 @@
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "ts-jest": "^29.1.0",
-    "typechain": "^8.1.1",
+    "typechain": "^8.2.0",
     "typescript": "^5.0.4"
   },
   "config": {
