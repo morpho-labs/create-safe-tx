@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/morpho-labs/create-safe-tx#readme",
   "dependencies": {
-    "@inquirer/prompts": "^1.2.3",
+    "@inquirer/prompts": "^2.1.0",
     "@types/node": "^20.2.5",
     "command-line-args": "^5.2.1",
     "command-line-usage": "^7.0.1",
