@@ -638,10 +638,10 @@
     chalk "^4.1.2"
     figures "^3.2.0"
 
-"@inquirer/confirm@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@inquirer/confirm/-/confirm-2.0.1.tgz#9a9e7d5b1b028d6974be80d4231b7edb74553197"
-  integrity sha512-0Aj6hsv31c2whBLqTUNwZALfpn94sX85y7Xn12rU4scqyM9fAfBwIMXJQjqcCDk8ifheNVZLeP3wa/xmtW/tDA==
+"@inquirer/confirm@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@inquirer/confirm/-/confirm-2.0.2.tgz#aaf23a7edad7c2e9d5d8fd3e33840347b9734a2b"
+  integrity sha512-2/Ogb3fkVyCp/V9aowa3Ge/aNiZCwH58BPYLeaMxRGDRtGV70aw50194/WSfceNfliHOFGQF6Db39c7Q85Dpkg==
   dependencies:
     "@inquirer/core" "^2.1.0"
     "@inquirer/type" "^1.1.0"
@@ -702,13 +702,13 @@
     "@inquirer/type" "^1.1.0"
     chalk "^4.1.2"
 
-"@inquirer/prompts@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@inquirer/prompts/-/prompts-2.1.0.tgz#0e274d8a3f824eb83417e11f47318f600b70c215"
-  integrity sha512-YpfNrTjItyB9CYJUdIBp+9hRUu0e5JR//qC55gRrKjpGZP7CwrMvFJiS1LMZNG5vzd61CDxpOvNmkHcmMe6QmA==
+"@inquirer/prompts@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@inquirer/prompts/-/prompts-2.1.1.tgz#27a2701247edda8f3d334780fd14d1371e0f5d0c"
+  integrity sha512-DTtdrf3JoXQpfD5vAhW9isUE7lgcOBN5ikkxTqhkXZY41CnrFt7I2DTOmUUUbkh5shrcwq7zzAmVesoW2KM5EA==
   dependencies:
     "@inquirer/checkbox" "^1.3.1"
-    "@inquirer/confirm" "^2.0.1"
+    "@inquirer/confirm" "^2.0.2"
     "@inquirer/core" "^2.1.0"
     "@inquirer/editor" "^1.2.0"
     "@inquirer/expand" "^1.1.1"
@@ -1181,10 +1181,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.15.13.tgz#f64277c341150c979e42b00e4ac289290c9df469"
   integrity sha512-N+0kuo9KgrUQ1Sn/ifDXsvg0TTleP7rIy4zOBGECxAljqvqfqpTfzx0Q1NUedOixRMBfe2Whhb056a42cWs26Q==
 
-"@types/node@^20.2.5":
-  version "20.2.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.2.5.tgz#26d295f3570323b2837d322180dfbf1ba156fefb"
-  integrity sha512-JJulVEQXmiY9Px5axXHeYGLSjhkZEnD+MDPDGbCbIAbMslkKwmygtZFy1X6s/075Yo94sf8GuSlFfPzysQrWZQ==
+"@types/node@^20.3.1":
+  version "20.3.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.3.1.tgz#e8a83f1aa8b649377bb1fb5d7bac5cb90e784dfe"
+  integrity sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==
 
 "@types/prettier@^2.1.1", "@types/prettier@^2.1.5":
   version "2.7.2"
@@ -1933,10 +1933,10 @@ ethers-multisend@^2.4.0:
     "@ethersproject/solidity" "^5.0.0"
     "@ethersproject/units" "^5.0.0"
 
-ethers@^6.4.2:
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.4.2.tgz#8304660278ef7d43959ad5c73ccf14d0e32e0a3f"
-  integrity sha512-c+vcTycVHp1bN6msgs9iscZKQgEqdzFh6omyvil2musktHJkPtWOKMuiGVBlBqMV100At5AAZBzG9HUBcUWKQA==
+ethers@^6.5.1:
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.5.1.tgz#7beeeea2156dc4227da1176cb164007018b85c63"
+  integrity sha512-jDpCnUGcyn39hnRUEtrulDZOtJcIPEz4Whccl3N9qhwdLsn1ELuDM9TgGgGJq6ph0p8/Uri+Wezmo/r69E+xkA==
   dependencies:
     "@adraffy/ens-normalize" "1.9.2"
     "@noble/hashes" "1.1.2"

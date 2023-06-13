@@ -40,12 +40,12 @@
   },
   "homepage": "https://github.com/morpho-labs/create-safe-tx#readme",
   "dependencies": {
-    "@inquirer/prompts": "^2.1.0",
-    "@types/node": "^20.2.5",
+    "@inquirer/prompts": "^2.1.1",
+    "@types/node": "^20.3.1",
     "command-line-args": "^5.2.1",
     "command-line-usage": "^7.0.1",
     "dotenv": "^16.1.4",
-    "ethers": "^6.4.2",
+    "ethers": "^6.5.1",
     "ethers-multisend": "^2.4.0",
     "ts-node": "^10.9.1"
   },
