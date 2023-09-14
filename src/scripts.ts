@@ -9,13 +9,7 @@ import {
   toBigInt,
   ZeroAddress,
 } from "ethers";
-import {
-  TransactionType,
-  encodeMulti,
-  MetaTransaction,
-  OperationType,
-  encodeSingle,
-} from "ethers-multisend";
+import { TransactionType, encodeMulti, MetaTransaction, OperationType, encodeSingle } from "ethers-multisend";
 import { writeFileSync } from "fs";
 
 import { input, select } from "@inquirer/prompts";
@@ -43,9 +37,7 @@ export const createSafeTx = async (provider: string) => {
   let txs: MetaTransaction[] = [];
   for (const index of new Array(nbTxs).fill(0).map((_, index) => index)) {
     console.log(
-      `\n      --- Transaction ${(index + 1).toString().padStart(2, "0")}/${nbTxs
-        .toString()
-        .padStart(2, "0")} ---\n`
+      `\n      --- Transaction ${(index + 1).toString().padStart(2, "0")}/${nbTxs.toString().padStart(2, "0")} ---\n`
     );
 
     const prefix = `  `;
@@ -70,10 +62,7 @@ export const createSafeTx = async (provider: string) => {
 
         const functionSignature = await input({
           message: prefix + `Function signature`,
-          validate: trial(
-            (value) => !!FunctionFragment.from(`function ${value}`),
-            "Invalid function signature"
-          ),
+          validate: trial((value) => !!FunctionFragment.from(`function ${value}`), "Invalid function signature"),
         });
         const fragment = FunctionFragment.from(`function ${functionSignature}`);
 
@@ -94,18 +83,11 @@ export const createSafeTx = async (provider: string) => {
           values.push(value);
         }
 
-        const subprocess = spawnSync(
-          "cast",
-          ["calldata", fragment.format("sighash")].concat(values)
-        );
+        const subprocess = spawnSync("cast", ["calldata", fragment.format("sighash")].concat(values));
 
         data = subprocess.stdout.toString().trim();
         if (!isHexString(data))
-          throw Error(
-            `An error happened when encoding calldata:\n${data}\n${subprocess.stderr
-              .toString()
-              .trim()}`
-          );
+          throw Error(`An error happened when encoding calldata:\n${data}\n${subprocess.stderr.toString().trim()}`);
 
         value = await inputNumber({
           message: prefix + `Value (ETH)`,
@@ -152,9 +134,7 @@ export const createSafeTx = async (provider: string) => {
           decimals
         );
 
-        txs.push(
-          encodeSingle({ id: "", type: txType, to, token, amount: amount.toString(), decimals })
-        );
+        txs.push(encodeSingle({ id: "", type: txType, to, token, amount: amount.toString(), decimals }));
 
         break;
 

@@ -75,8 +75,7 @@
   "prettier": {
     "tabWidth": 2,
     "singleQuote": false,
-    "trailingComma": "es5",
-    "printWidth": 100,
+    "printWidth": 120,
     "importOrder": [
       "^@",
       "^\\.\\.",
