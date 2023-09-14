@@ -68,14 +68,14 @@ export const createSafeTx = async (provider: string) => {
       case TransactionType.callContract:
         to = await inputAddress({ message: prefix + `Contract address` });
 
-        const functionSelector = await input({
-          message: prefix + `Function selector`,
+        const functionSignature = await input({
+          message: prefix + `Function signature`,
           validate: trial(
             (value) => !!FunctionFragment.from(`function ${value}`),
-            "Invalid function selector"
+            "Invalid function signature"
           ),
         });
-        const fragment = FunctionFragment.from(`function ${functionSelector}`);
+        const fragment = FunctionFragment.from(`function ${functionSignature}`);
 
         const values = [];
         for (const { param, index } of fragment.inputs.map((param, index) => ({ param, index }))) {
