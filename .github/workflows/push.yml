@@ -4,15 +4,8 @@ on:
   push:
     branches:
       - main
-      - next
 
 jobs:
-  # test:
-  #   uses: ./.github/workflows/test.yml
-  #   secrets: inherit
-
   release:
-    # needs: test
-
     uses: ./.github/workflows/release.yml
     secrets: inherit
