@@ -126,13 +126,10 @@ export const createSafeTx = async (provider: string) => {
         });
 
         to = await inputAddress({ message: prefix + `Recipient address` });
-        const amount = parseUnits(
-          await input({
-            message: prefix + `Amount`,
-            validate: trial((value) => !!parseUnits(value, decimals), "Invalid amount"),
-          }),
-          decimals
-        );
+        const amount = await input({
+          message: prefix + `Amount`,
+          validate: trial((value) => !!parseUnits(value, decimals), "Invalid amount"),
+        });
 
         txs.push(encodeSingle({ id: "", type: txType, to, token, amount: amount.toString(), decimals }));
 
